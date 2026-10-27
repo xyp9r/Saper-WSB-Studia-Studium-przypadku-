@@ -84,7 +84,7 @@ class Program
     static char[,] InitializeBoard(int width, int height, int bombCount)
     {
         char[,] board = new char[height, width];
-        Random random = /*??*/
+        Random random = new Random();
 
         // Wypełnij planszę bombami.
         for (int i = 0; i < bombCount; i++)
