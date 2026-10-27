@@ -84,7 +84,7 @@ class Program
     static char[,] InitializeBoard(int width, int height, int bombCount)
     {
         char[,] board = new char[height, width];
-        Random random = /*??*/
+        Random random = new Random();
 
         // Wypełnij planszę bombami.
         for (int i = 0; i < bombCount; i++)
@@ -115,7 +115,7 @@ class Program
             }
         }
         
-        /*??*/ displayBoard;
+        return displayBoard;
         
     }
     
@@ -185,7 +185,7 @@ class Program
 
         {
 
-            for (int j = Math.Max(0, x - 1); j <= /*??*/(width - 1, x + 1); j++)
+            for (int j = Math.Max(0, x - 1); j <= Math.Min(width - 1, x + 1); j++)
 
             {
 
