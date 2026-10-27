@@ -163,6 +163,7 @@ class Program
 
             Console.WriteLine();
             Console.WriteLine("Danya programist");
+            Console.WriteLine("I want a drink green tea!!! pls help guys");
 
         }
 
