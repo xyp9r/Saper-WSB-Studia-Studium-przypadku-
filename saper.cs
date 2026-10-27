@@ -162,8 +162,6 @@ class Program
             }
 
             Console.WriteLine();
-            Console.WriteLine("Danya programist");
-            Console.WriteLine("I want a drink green tea!!! pls help guys");
 
         }
 
@@ -286,7 +284,6 @@ class Program
             }
 
         }
-        
         return uncoveredCount == width * height - bombCount;
 
     }
