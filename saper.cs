@@ -99,10 +99,10 @@ class Program
             board[y, x] = '*';
         }
         
-        return board;
+        return displayBoard;
     }
     
-    static char[,] InitializeDisplayBoard(int width, int height)
+    static char[,] InitializeDisplayBoard(int width, int height) 
     {
         char[,] displayBoard = new char[height, width];
         
@@ -114,9 +114,9 @@ class Program
                 displayBoard[i, j] = ' ';
             }
         }
-
+        
         return displayBoard;
-
+        
     }
     
     static void DisplayBoard(char[,] board)
@@ -161,7 +161,7 @@ class Program
 
             }
 
-            Console.WriteLine("govno");
+            Console.WriteLine();
 
         }
 
@@ -284,7 +284,6 @@ class Program
             }
 
         }
-
         return uncoveredCount == width * height - bombCount;
 
     }
